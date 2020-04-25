@@ -23,6 +23,7 @@ cp -R old_folder new_folder
 Write a script that checks whether a program exists on your machine. If it doesn’t, it should try to fetch the program via `apt install`. (_`12` pts_)
 
 ```
+dpkg -l | apt install {program}
 ```
 
 ### Question 3
