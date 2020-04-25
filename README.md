@@ -35,6 +35,7 @@ Write a command that will create an empty file with a `.txt` extension named aft
 Write a command that will recursively remove files with the `.thumbs` extension from the current folder. (_`12` pts_)
 
 ```
+rm -r *.thumbs
 ```
 
 ### Question 5
