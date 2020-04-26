@@ -16,7 +16,9 @@ ssh roy@user-bauhaus.cs.hartford.edu
 Write a script that recursively copies all the files in one folder to another folder. The names of both folders should be arguments to the script. (_`12` pts_)
 
 ```
-cp -R old_folder new_folder
+cd /Desktop/folder
+
+cp * /Desktop/new_folder
 ```
 
 ### Question 2
