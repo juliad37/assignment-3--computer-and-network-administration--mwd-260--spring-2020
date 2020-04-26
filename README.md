@@ -30,6 +30,7 @@ dpkg -l | apt install {program}
 Write a command that will create an empty file with a `.txt` extension named after the current folder. (_`12` pts_)
 
 ```
+touch current_folder/current_folder.txt
 ```
 
 ### Question 4
@@ -56,6 +57,16 @@ Write a script that reports every file name in a folder as two items: the filena
 Write a script that requests the user answer `y` or `n` to a prompt, and only exits when either of the two responses is entered. The user’s response should be echoed to the screen _before_ the program exits. (_`28` pts_)
 
 ```
+read -p "Enter y or n: " ANSWER
+
+case "$ANSWER" in
+  [yY])
+    echo "You answered yes"
+    ;;
+  [nN])
+    echo "You answered no"
+    ;;
+esac
 ```
 
 ## ❖・Due・❖
