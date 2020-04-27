@@ -32,7 +32,7 @@ dpkg -l | apt install {program}
 Write a command that will create an empty file with a `.txt` extension named after the current folder. (_`12` pts_)
 
 ```
-touch current_folder/current_folder.txt
+touch "${current_folder}.txt"
 ```
 
 ### Question 4
@@ -46,7 +46,7 @@ rm -r *.thumbs
 Write a command that will recursively remove empty folders from the current folder. (_`12` pts_)
 
 ```
-rm -d folder1 folder2 folder3
+find . -type d -empty -delete
 ```
 
 ### Question 6
